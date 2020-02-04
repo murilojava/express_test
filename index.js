@@ -4,10 +4,24 @@ const app = express()
 const port = 3000
 
 const products = [
-    {id:1, name:"teste1", value:10.25},
-    {id:2, name:"teste2", value:29.25, price:14.8, type:"teste"},
-    {id:3, name:"teste3", value:30.11},
-]
+    {
+      name: 'Phone XL',
+      price: 799,
+      description: 'A large phone with one of the best screens'
+    },
+    {
+      name: 'Phone Mini',
+      price: 699,
+      description: 'A great phone with one of the best cameras'
+    },
+    {
+      name: 'Phone Standard',
+      price: 299,
+      description: ''
+    }
+  ];
+  
+  
 
 app.use(cors())
 app.use(express.json()) // for parsing application/json
